@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/task.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="#" class="navbar-brand">operations <span>s</span>ystem</a>
+            <a href="#nav" class="navbar-toggler" data-target="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </a>
+            <!-- class="collapse navbar-collapse" -->
+            <div id="nav" >
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Crud System Management</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Task System</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container body">
+        <div class="cont ml-0 mr-0">
+            <div class="col-6-lg mt-5">
+                <div class="home-txt card">
+                    <h4 class="card-title">Task Management System</h4>
+                    <p class="card-txt"><span>M</span>anage <span>Y</span>our <span>E</span>veryday <span>T</span>ask</p>
+                    <div class="input-group">
+                        <p>Enter Your Task And Submit</p>
+                        <div class="w-100 ">
+                            <input type="text" placeholder="Enter task title..." id="input-title">
+                            <button id="task-input-btn">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6-md mt-5">
+                <div class="task-table">
+                    <h3>Task List</h3>
+                    <div id="task" class="task-list ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/task.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+</body>
+</html>

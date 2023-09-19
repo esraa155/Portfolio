@@ -1,0 +1,118 @@
+@import './main.css';
+/* Start */
+.sc-1{
+    min-height: 100vh;
+    background:url("../images/sc1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+/* Part-1 */
+.sc-1 .info-part{
+    width: 50%;
+    min-height: 30rem;
+}
+.sc-1 .info-part h1{
+    text-shadow: 2px -4px -1px #fff;
+    min-height: 27rem;
+    margin-top: 60px;
+    font-size: 4.5em;
+    color: #a09f9f;
+}
+.sc-1 .info-part h1 div{
+    margin-top: 30px;
+    padding-left: 10px;
+    color: #a09f9f;
+}
+.sc-1 .info-part h1::first-letter{
+    color: #fff;
+}
+.sc-1 .info-part .connect{
+    display: flex;
+    flex-flow: row wrap;
+}
+.sc-1 .info-part .connect button{
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: var(--main-padding);
+    font-weight: 550;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+.sc-1 .info-part .connect button a{
+    text-decoration: none;
+    color: #000;
+}
+.sc-1 .info-part .connect ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+.sc-1 .info-part .connect ul li{
+    padding: 25px;
+    cursor: pointer;
+}
+.sc-1 .info-part .connect ul li:hover{
+    opacity: .5;
+}
+.sc-1 .info-part .connect ul li a{
+    text-decoration: none;
+}
+.sc-1 .info-part .connect ul li a img{
+    width: 20px;
+    height: 20px;
+}
+.sc-1 .info-part .connect ul li.git-hub a img{
+    border-radius: var(--main-radius);
+}
+.sc-1 .info-part .connect ul li:nth-child(2) a img{
+    width: 14px;
+}
+/* Part-2 */
+.sc-1 .img-part{
+    width: 50%;
+    margin-top: 60px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+.sc-1 .img-part img{
+    width: 25rem;
+    height: 25rem;
+    background-color: #000;
+    filter: grayscale(0);
+    background-color: #1e1e1e;
+    border-radius: var(--circle-radius);
+    border: 5px solid #e1e1e1;
+    margin: 10px;
+}
+.sc-1 .img-part p{
+    width: 80%;
+    color: #7a7a7a;
+}
+.sc-1 .img-part p span{
+    font-weight: 700;
+}
+/* End */
+/* Media Part */
+@media  only screen and (min-width:300px) and (max-width:665px){
+    .sc-1 .img-part img{
+        width: 13rem;
+        height: 13rem;
+    }
+    .sc-1 .info-part h1{
+        font-size: 2.5em;
+    }
+}
+@media  only screen and (max-width:1065px) {
+    .sc-1 .info-part,
+    .sc-1 .img-part{
+        width: 100%;
+    }
+}

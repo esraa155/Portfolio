@@ -1,0 +1,84 @@
+@import './main.css';
+.sc-5 .contact{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sc-5 .contact img{
+    width: 28rem;
+    height: 28rem;
+    filter: grayscale(0);
+    border-radius: 15rem;
+}
+.sc-5 .contact div{
+    width: 25rem;
+    min-height: 35rem;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.sc-5 .contact div h2{
+    margin: 25px;
+}
+.sc-5 .contact div h2 span{
+    color: #f2c84a;
+}
+.sc-5 .contact div p{
+    padding: 25px;
+    padding-top: 5px;
+    color: #7a7a7a;
+}
+.sc-5 .contact div form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.sc-5 .contact div form label{
+    text-transform: uppercase;
+}
+.sc-5 .contact div form input,
+.sc-5 .contact div form textarea{
+    margin: 5px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    background-color: #292b2c;
+    padding: 10px;
+    font-family: cursive;
+}
+.sc-5 .contact div form textarea{
+    height: 110px;
+}
+.sc-5 .contact div form input:focus,
+.sc-5 .contact div form textarea:focus{
+    border: none;
+    outline: none;
+    background-color: #000000bc;
+    transform: scale(1.03);
+    transition: var(--main-transition);
+}
+.sc-5 .contact div form input[type="submit"]{
+    background-color: #f2c84a;
+    color: #292b2c;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.sc-5 .contact div form input[type="submit"]:hover{
+    cursor: pointer;    
+    background-color: #a58933;
+    transform: scale(1.04);
+    transition: var(--main-transition);
+}
+/* Media Part */
+@media screen and (max-width:1049px){
+    .sc-5 .contact div{
+        width: 35rem;
+    }
+    .sc-5 .contact img{
+        display: none;
+    }
+}

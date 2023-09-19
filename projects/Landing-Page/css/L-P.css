@@ -1,0 +1,554 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root{
+    --color1:#1a2f70;
+    --color2:#1f3c92;
+    --color3:#3276a3;
+    --color4:#A3BC95;
+    --section-padding : 120px;
+    --transition : all .3s ease-in-out ;
+    --transition2 : all 1s ease-in-out ;
+}
+::selection{
+    background-color: #7482ae;
+    color: #fff;
+}
+.Container{
+    padding: 0px var(--section-padding);
+    margin: 0px auto;
+}
+body{
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 3.5;
+    background-color: #fff;
+}
+nav .logo{
+    align-self: center;
+    display: flex;
+}
+nav .logo img{
+    align-self: center;
+}
+nav .logo h3{
+    letter-spacing: .05em;
+    font-family: 'Handjet', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Poppins', sans-serif;
+}
+nav .logo h3::first-letter,
+nav .logo h3 span
+{
+    color: var(--color4);
+    font-size: 20px;
+}
+nav ul{
+    list-style: none;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+nav ul li{
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+}
+nav ul li:hover{
+    background-color: var(--color4);
+    transition: .2s ease all;
+}
+nav ul li:nth-child(2)::after,
+nav ul li:nth-child(3)::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0d7";
+}
+nav ul #search-icon::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f002";
+}
+/* End Nav-bar */
+/* Body */
+.welcome-txt{
+    position: relative;
+    margin: 110px var(--section-padding);
+    margin-top: 160px;
+    color: #fff;
+    background-color: #1a2f706d;
+    /* background-color: #1a2f7084; */
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+.welcome-txt::before{
+    position: absolute;
+    content: "";
+    height: 200px;
+    width: 3px;
+    left:10px;
+    top: 15px;
+    border-radius: 5px;
+    background-color: var(--color4);
+}
+.welcome-txt h4{
+    letter-spacing: .12em;
+}
+.welcome-txt h2{
+    letter-spacing: .2em;
+    text-shadow: -2px 3px 5px;
+    display: block;
+    padding: 15px 3px;
+}
+.welcome-txt h2::first-letter,
+.welcome-txt h2 span{
+    color: var(--color4);
+}
+.welcome-txt p{
+    display: block;
+    font-size: 17px;
+    letter-spacing: 0.02em;
+    line-height: 1.5em ;
+    text-transform: capitalize;
+    padding: 5px 3px;
+}
+.welcome-txt .btns button,
+.about-us .part-1 button{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    outline:none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    color: #fff;
+}
+.welcome-txt .btns #btn1{
+    background: linear-gradient(to right,var(--color1),var(--color3));
+}
+.welcome-txt .btns #btn2,
+.about-us .part-1 button,
+.contact-us div form button{
+    background: linear-gradient(to right,var(--color4),var(--color2));
+}
+.welcome-txt .btns button:hover,
+.about-us .part-1 button:hover,
+.contact-us div form button:hover{
+    background: var(--color2) !important; 
+    box-shadow: -1px 0px 5px var(--color4);
+    transition: all .6s ease-in-out;
+}
+/* Transaction-Section */
+.transaction-section{
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+    background: linear-gradient(to right , var(--color4),var(--color2));
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    min-height: 150px;
+}
+.transaction-section .grid-item{
+    padding: 50px 0px;
+    margin-right: 50px;
+}
+.transaction-section .grid-item:last-child{
+    margin-right: 0px;
+}
+.transaction-section .grid-item .head{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 0px 40px;
+}
+.transaction-section .grid-item .head .header-txt{
+    text-transform: uppercase;
+    text-align: center;
+}
+.transaction-section .grid-item .head .icon-1::before,
+.transaction-section .grid-item .head .icon-2::before,
+.transaction-section .grid-item .head .icon-3::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 40px;
+}
+.transaction-section .grid-item .head .icon-1::before{
+    content: "\f5b0";
+}
+.transaction-section .grid-item .head .icon-2::before{
+    content: "\f590";
+}
+.transaction-section .grid-item .head .icon-3::before{
+    content: "\f017";
+}
+.transaction-section .grid-item .text{
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+/* End Transaction-Section */
+/* About Us-Section */
+.about-us{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 400px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.about-us div{
+    width: 50%;
+}
+.about-us .part-1 h1,.services h1,.contact-us h1{
+    position: relative;
+    margin-bottom: 20px;
+    color: var(--color1);
+}
+.about-us .part-1 h1::before,
+.services h1::before,
+.contact-us h1::before{
+    position: absolute;
+    content: "";
+    width: 130px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--color4);
+    bottom: -5px;
+}
+.about-us .part-1 h3{
+    color: var(--color1);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.about-us .part-1 p{
+    font-size: 17px;
+    color: #6c8061;
+}
+.about-us .part-2{
+    text-align: end;
+    align-self: center;
+}
+.about-us .part-2 img{
+    width: 70%;
+    min-height: 300px;
+    border-radius: 15px;
+}
+/* End About Us-Section */
+/* Sercvices-Section */
+.services{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 400px;
+    background-image: url('../images/world.svg');
+    background-color: #ffffffc8;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.services .serves{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.services .serves .serve{
+    width: 390px;
+    cursor: pointer;
+}
+.services .serves .serve:hover{
+    transform: scale(1.1);
+    transition: var(--transition2);
+    transition-duration: 1s;
+}
+.services .serves .serve img{
+    opacity: .8;
+    width: 100%;
+    border-radius: 5px;
+    height: 300px;
+    box-shadow: 2px 2px 2px var(--color4);
+}
+.services .serves .serve h3{
+    position: relative;
+    color: #fff;
+    background: linear-gradient(to right , var(--color4),var(--color1));
+    padding: 15px;
+    width: 75%;
+    text-align: end;
+    border-top-left-radius:30px;
+    border-bottom-left-radius:30px;
+    right: -97px;
+    bottom: 32px;
+}
+.services .serves .serve h3::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    background-color: var(--color1);
+    font-size: 20px;
+    border-radius: 50%;
+    top: 0px;
+    left: -5px;
+    border-color: #fff;
+    border-radius: 50%;
+    border-width: 5px;
+    border-style: dashed;
+}
+.services .serves .serve h3:hover{
+    background: linear-gradient(to right,var(--color3),var(--color2));
+}
+.services .serves .serve #serve-1-txt::before{
+    content: "\f0a1";
+    padding: 12px 16px;
+}
+.services .serves .serve #serve-2-txt::before{
+    content: "\f0eb";
+    padding: 12px 16px;
+}
+.services .serves .serve #serve-3-txt::before{
+    content: "\24";
+    padding: 12px 17px;
+}
+/* End Sercvices-Section */
+/* Contact-Us-Section */
+.contact-us{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-height: 400px;
+    background-color: #fff;
+}
+.contact-us div form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.contact-us div form div{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-us div form label{
+    display: block;
+    font-weight: bold;
+    font-size: x-large;
+    color: var(--color1);
+}
+.contact-us div form div input,
+.contact-us div form div textarea{
+    width: 100%;
+    outline: none;
+    border: 2px 2px 2px solid ;
+    padding: 10px;
+    background: linear-gradient(to right,#c6d7cb,#9fbfd0);
+    border-color: #77919f;
+    color: var(--color2);
+    border-width: 5px;
+    border-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 16px;
+    font-weight: bold;
+} 
+.contact-us div form div input:focus,
+.contact-us div form div textarea:focus{
+    transform: scale(1.06);
+    background-color: linear-gradient(to right,#859189,#1b5676);
+    transition: all .3s ease-in-out;
+}
+.contact-us div form #last-div-form{
+    width: 93%;
+}
+.contact-us div form .btns{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.contact-us div form button{
+    margin-top: 20px;
+    width: 45%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    justify-self: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+/* End Contact-Us-Section */
+/* End Body  */
+/* Footer */
+footer{
+    min-height: 50px;
+    color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    background: linear-gradient(to right , var(--color4),var(--color2));
+    justify-content: space-between;
+    align-items: center;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+footer ul li {
+    position: relative;
+    font-size: 20px;
+}
+footer ul li a{
+    text-decoration: none;
+    padding: 5px;
+}
+footer ul li a img{
+    width: 35px;
+    height: 35px;
+    background-color: var(--color4);
+    border-radius: 5px;
+    padding: 5px;
+}
+footer ul li a img:hover{
+    background:linear-gradient(to right , var(--color4),var(--color2));
+    transition: var(--transition);
+}
+footer .copy-right,
+footer h3{
+    align-self: center;
+}
+/* End Footer */
+/* Media - Part */
+@media only screen and (min-width:195px) and (max-width:1095px){
+    .welcome-txt{
+        margin-top: 270px;
+    }
+}
+@media only screen and (max-width:767){
+    .welcome-txt{
+        margin-top: 420px;
+    }
+} 
+@media only screen and (max-width:630px){
+    .welcome-txt{
+        margin: 40px;
+        transition: .3s all ease-in-out;
+    }
+}
+@media only screen and (max-width:1040px){
+    .transaction-section{
+        grid-template-columns: 1fr;
+        transition: .3s all ease-in-out;
+    }
+    .transaction-section .grid-item{
+        width: fit-content!important ;
+        margin: -15px;
+    }
+    .transaction-section .grid-item .head i::before{
+        text-align: center;
+    }
+    .about-us div{
+        width: 100%;
+        transition: var(--transition);
+    }
+    .about-us .part-2{
+        justify-self: center;
+    }
+}
+@media only screen and (max-width:415px){
+    .transaction-section{
+        padding: 48px;
+    }
+    .contact-us.Container{
+        padding: 45px;
+    }
+}
+@media only screen and (max-width:470px){
+    .contact-us form div label{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:630px){
+    nav{
+        position: relative;
+    }
+}
+@media only screen and (max-width:620px){
+    div.Container.about-us{
+        padding: 35px;
+    }
+    .contact-us div form .btns button{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:415px){
+    nav.Container{
+        padding: 40px;
+    }
+    .about-us div{
+        width: 300px;
+    }
+    .services{
+        padding: 25px;
+    }
+}
+@media only screen and (max-width:970px){
+    nav ul li{
+        display: none;
+        transition: all .3s ease-in-out;
+    }
+    nav ul::before{
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f550";
+        margin: 10px;
+        padding: 10px;
+        width: 35px;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 15px;
+        border: 2px solid var(--color1);
+        transition: var(--transition);
+    }
+    nav ul:hover::before{
+        color: #6c8061;
+        border-color: #6c8061;
+    }
+}
+@media only screen and (max-width:1035px){
+    .services .serves{
+        justify-content: center;
+    }
+}
+@media only screen and (max-width:1075px){
+    .contact-us div form div,
+    .contact-us div form #last-div-form{
+        width: 100%;
+    }
+}
+/* End Media-Part */

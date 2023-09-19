@@ -1,0 +1,65 @@
+@import './main.css';
+.sc-4 .projects {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.sc-4 .projects div{
+    position: relative;
+    background-color: #1e1e1e;
+    min-height: 24rem;
+    width: 320px;
+    opacity: .7;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    margin-bottom: 35px;
+}
+.sc-4 .projects div img{
+    margin-bottom: 20px;
+    border: 3px solid #7a7a7a;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    height: 150px;
+}
+.sc-4 .projects .pr-1 > img{
+    padding: 30px;
+}
+.sc-4 .projects div a{
+    position: absolute;
+    right: 8%;
+    top: 8%;
+    text-decoration: none;
+}
+.sc-4 .projects div a img{
+    width: 55px;
+    height: 55px;
+    border: 3px solid #7a7a7a;
+    border-radius: var(--circle-radius);
+    cursor: pointer;
+}
+.sc-4 .projects div h3{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: blanchedalmond;
+    font-size: 25px;
+}
+.sc-4 .projects div a img:hover {
+    opacity: .5;
+    transform: scale(1.1);
+    transition: var(--main-transition);
+}
+.sc-4 .projects div:hover{
+    opacity: 1;
+    transform: scale(1.05);
+    transition: var(--main-transition);
+}
+/* Media Part */
+@media screen and (max-width :1286px){
+    .sc-4 .projects,
+    .sc-3 .processes{
+        justify-content: center;
+    }
+}

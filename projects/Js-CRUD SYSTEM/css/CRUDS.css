@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(18, 63, 63);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.CRUD{
+    width: 70%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    margin: 15px;
+}
+input{
+    border-radius: 4px;
+}
+.hide{
+    display: none;
+}
+.input input ,.output .srch input{
+    margin: 5px 0;
+    padding: 7px 0;
+    width: 100%;
+    outline:none ;
+}
+.input .price input{
+    width: 20%;
+    padding: 5px 0;
+}
+input:focus{
+    box-shadow: inset -9px 0 0 0 rgb(132, 130, 93);
+    transform: scale(1.05);
+    transition: all ease-in-out .3s;
+}
+#total{
+    display: inline;
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(12, 16, 16);
+}
+#total::before{
+    content: 'Total : ';
+}
+#subBtn ,
+.srch button ,
+.output #deleteAll,
+table tr td button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(216, 212, 152, 0.467);
+    color: #272626;
+    font-weight: bold;
+}
+#subBtn:hover,
+.srch button:hover,
+.output #deleteAll:hover,
+table tr td button:hover
+{
+    color: #fff;
+    background-color: rgb(8, 25, 25);
+    transform: scale(1.05);
+    letter-spacing: 1.5px;
+    transition: all ease-in-out .4s;
+    
+}
+
+.srch .btns button{
+    width: 45%;
+}
+.srch .btns{
+    display: flex;
+    justify-content: space-between;
+}
+#deleteAll::before {
+    content: 'Delete All (';
+}
+#deleteAll::after {
+    content:')';
+}
+table{
+    width: 100%;
+    background-color: rgb(5, 30, 30);
+    border: 2px solid #477;
+}
+table tr{
+    text-align: center;
+}
+table tr td button{
+    width: 80%;
+    padding: 6px;
+}
+

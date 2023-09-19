@@ -1,0 +1,100 @@
+@import './main.css';
+
+.main-Calculator {
+    width: 19rem;
+    min-height: 20rem;
+    background-color: #161515;
+    padding: 23px;
+    border-radius: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: center; */
+    align-items: flex-start;
+}
+/* section - 1  */
+.main-Calculator .header{
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+}
+/* .main-Calculator .header h1{} */
+.main-Calculator .header button{
+    width: 3.5rem;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px;
+    background-color: #1e1e1e;
+    color: #a82b2b;
+    border-radius: 15px;
+    border: none;
+}
+.main-Calculator .header button:hover{
+    background-color: #1e1e1e;
+    color: #fff;
+    transition: var(--main-transition);
+}
+/* section - 2  */
+.main-Calculator .input-c-btn{
+    width: 100%;
+    margin-top: .5rem;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.main-Calculator .input-c-btn input[type='text']{
+    width: 78%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #2f3332;
+    border-radius: 30px;
+    padding: 15px;
+}
+.main-Calculator .input-c-btn button{
+    width: 20%;
+    height: 50px;
+    padding: 15px;
+    border-radius : 50%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: red;
+}
+.main-Calculator .input-c-btn button:hover{
+    background-color: rgba(255, 0, 0, 0.549);
+    cursor: pointer;
+}
+/* section - 3  */
+.main-Calculator .btns{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem ;
+}
+.main-Calculator .btns section{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.main-Calculator .btns section button{
+    width: 54px;
+    padding: 20px;
+    margin: 3px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    background-color: #2f3332;
+}
+.main-Calculator .btns section button:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+}
+/* End Style */

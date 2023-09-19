@@ -1,0 +1,40 @@
+@import './main.css';
+footer{
+    min-height: 4rem;
+    width: 100%;
+    padding: 20px;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .mail p{
+    color: #7a7a7a;
+}
+footer ul{
+    width: 16rem;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+footer ul li{
+    width: 30px;
+    border-radius: var(--circle-radius);
+}
+footer ul li:hover{
+    opacity: 0.7;
+}
+footer ul li:last-child a img:hover{
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: .5;
+}
+/* Media Part */
+@media screen and (max-width :768px){
+    footer{
+        padding: 15px;
+    }
+}

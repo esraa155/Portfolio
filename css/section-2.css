@@ -1,0 +1,145 @@
+@import './main.css';
+.sc-2 .career-skills{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.sc-2 .career-skills div{
+    margin: 80px;
+    min-width: 300px;
+    max-width: 450px;
+}
+.sc-2 .career-skills div:nth-child(1) h1,
+.sc-2 .career-skills div:nth-child(2) h1,
+.sc-2 .areas h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.sc-2 .career-skills div:nth-child(1) p{
+    color: #7a7a7a;
+}
+.sc-2 .career-skills div:nth-child(2) .skills{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+}
+.sc-2 .career-skills div:nth-child(2) .skills span{
+    padding: 10px;
+    margin: 5px;
+    background-color: #0B0B0B;
+    /* color: #aeaeae; */
+    color: #fff;
+    display: inline-block;
+}
+.sc-2 .areas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sc-2 .areas h1{
+    width: 100%;
+    text-align: center;
+}
+.sc-2 .areas .ar{
+    width: 75%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.sc-2 .areas .ar h4{
+    text-align: start;
+    width: 255px;
+}
+.sc-2 .areas .ar div{
+    justify-self: flex-end;
+    position: relative;
+    background-color: #7a7a7a;
+    color: #000;
+    text-align: center;
+    height: 1.3rem;
+    font-weight: bold;
+    width: 70%;
+    margin-top: 10px;
+    border-radius: var(--second-radius);
+}.sc-2 .areas .ar div::before{
+    content: attr(data-text);
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    height: 1.3rem;
+    border-radius: var(--second-radius);
+}.sc-2 .areas .ar .ar-1::before{
+    width: 99%;
+}.sc-2 .areas .ar .ar-2::before{
+    width: 98%;
+}.sc-2 .areas .ar .ar-3::before{
+    width: 97%;
+}.sc-2 .areas .ar .ar-4::before{
+    width: 96%;
+}.sc-2 .areas .ar .ar-5::before{
+    width: 90%;
+}.sc-2 .areas .ar .ar-6::before{
+    width: 81%;
+}.sc-2 .areas .ar .ar-7::before{
+    width: 100%;
+}.sc-2 .areas .ar .ar-8::before{
+    width: 95%;
+}
+/* --- */
+.sc-2 .areas .ar div::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 7px solid #000000;
+    border-radius: var(--circle-radius);
+    background-color: #434343;
+    top: -7px;
+}.sc-2 .areas .ar .ar-1::after{
+    right: 1%;
+}.sc-2 .areas .ar .ar-2::after{
+    right: 2%;
+}.sc-2 .areas .ar .ar-3::after{
+    right: 3%;
+}.sc-2 .areas .ar .ar-4::after{
+    right: 4%;
+}.sc-2 .areas .ar .ar-5::after{
+    right: 10%;
+}.sc-2 .areas .ar .ar-6::after{
+    right: 19%;
+}.sc-2 .areas .ar .ar-7::after{
+    right: 0%;
+}.sc-2 .areas .ar .ar-8::after{
+    right: 5%;
+}
+/* Media Part */
+@media screen and (max-width:1225px){
+    .sc-2 .areas {
+        justify-content: space-between;
+    }
+    .sc-2 .areas .ar{
+        text-align: center;
+        width: 100%;
+    }
+    .sc-2 .areas .ar div{
+        width: 60%;
+    }
+}
+@media screen and (max-width:425px){
+    .sc-2 .areas .ar{
+        width: 100%;
+    }
+    .sc-2 .areas .ar div{
+        text-align: center;
+        width: 80%;
+    }
+}
+@media screen and (max-width:1380px){
+    .sc-2 .career-skills div{
+        margin: 10px;
+    }
+}

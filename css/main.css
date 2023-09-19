@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+:root{
+    --color1: #050;
+    --color2: #055;
+    --main-margin: 40px;
+    --main-padding: 20px;
+    --main-radius: 25px;
+    --second-radius: 15px;
+    --circle-radius: 50%;
+    --main-transition: all .3s ease-in-out;
+}
+::selection{
+    background-color: #818cfd9c;
+}
+.container{
+    margin: 0 var(--main-margin);
+}
+body{
+    background-color: #000;
+    font-family: cursive;
+}
+section:not(.sc-1){
+    margin-top: 5rem;
+    min-height: 5rem;
+}
+section:not(.sc-2){
+    padding: calc(var(--main-padding) + 30px);
+}
+section > h1:not(.sc-1),
+section > h1:not(.sc-2){
+    width: 100%;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 55px;
+}
+.sc-1{
+    margin-top: 4rem;
+}
+.sc-3,.sc-4{
+    margin: 0;
+}

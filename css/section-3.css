@@ -1,0 +1,58 @@
+@import './main.css';
+.sc-3 .processes{
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.sc-3 .processes div{
+    background-color: #0B0B0B;
+    padding: var(--main-padding);
+    min-height: 20rem;
+    margin-right: 15px;
+    margin-top: 20px;
+    width: 320px;
+}
+.sc-3 .processes .p4{
+    margin-right: 0px;
+}
+.sc-3 .processes div i{
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+}
+.sc-3 .processes div h3{
+    margin-top: var(--main-margin);
+}
+.sc-3 .processes div p{
+    padding-top: 5px;
+    color: #7a7a7a;
+}
+/* Media Part */
+@media screen and (max-width: 620px) {
+    .sc-3{
+        padding: calc(var(--main-padding) + 15px);;
+    }
+    .sc-3 .processes div{
+        width: 350px;
+        margin: 0;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 819.5px) {
+    .sc-3 .processes div{
+        margin-right: 0;
+    }
+}
+@media screen and (min-width: 626px) and (max-width: 1224px) {
+    .sc-3 .processes div{
+        width: 350px;
+    }
+    .sc-3 .processes{
+        justify-content: center;
+    }
+    .sc-3 .processes .p2{
+        margin-right: 0px;
+    } 
+}

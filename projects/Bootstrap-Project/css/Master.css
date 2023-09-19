@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#A3BC95;
+}
+::selection{
+    background-color: var(--main-color);
+}
+nav div ul li:nth-child(5) a::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f095";
+    opacity: .3s;
+}
+.navbar-brand img{
+    width: 65px;
+    height: 50px;
+}
+nav div ul li a:hover{
+    color: #A3BC95;
+}
+nav div ul .dropdown-menu a{
+    text-transform: capitalize;
+}
+nav div ul .dropdown-menu a:hover{
+    background-color: #A3BC95;
+}
+nav div ul li div a:last-child::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f0f0";
+    opacity: .3s;
+}
+nav div ul li #navbarDropdown::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f7f2";
+    opacity: .3s;
+}
+nav div ul li:nth-child(2) a::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f05a";
+    opacity: .3s;
+}
+nav div ul li:nth-child(4) a::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f1ad";
+    opacity: .3s;
+}
